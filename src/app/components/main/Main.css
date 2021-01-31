@@ -1,0 +1,20 @@
+.main-container {
+  flex-grow: 1;
+  padding: 15px;
+}
+
+.main__header {
+  margin-bottom: 50px;
+}
+
+.header__title {
+  margin: 0 0 5px 0;
+  font-size: 6rem;
+  border-bottom: 2px solid #333;
+}
+
+.header__subtitle {
+  margin: 0;
+  font-size: 2rem;
+  color: #aaa;
+}

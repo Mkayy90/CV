@@ -1,0 +1,27 @@
+.projects-container {
+  margin-top: 15px;
+}
+
+.projects__title {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.project-container {
+  margin: 5px 0 10px 10px;
+}
+
+.project__title {
+  color: #aaa;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.project__description {
+  margin: 3px 0;
+}
+
+.project__tags {
+  font-size: 1.3rem;
+  color: #aaa;
+}

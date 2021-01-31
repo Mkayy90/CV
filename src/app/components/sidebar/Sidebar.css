@@ -1,0 +1,36 @@
+.sidebar-container {
+  padding: 15px;
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 30px;
+  border-radius: 50%;
+}
+
+.image {
+  position: absolute;
+  top: -20%;
+  left: -25%;
+  right: 0;
+  bottom: 0;
+  max-width: 150%;
+  max-height: 150%;
+}
+
+.sidebar__links {
+  text-align: center;
+}
+.sidebar__links a {
+  display: block;
+  margin-bottom: 5px;
+  color: #5555aa;
+  font-weight: 600;
+  text-decoration: none;
+}
+.sidebar__links a:hover {
+  filter: brightness(75%);
+}
