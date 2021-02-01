@@ -83,6 +83,7 @@ export const skills = {
     { 'title': 'Vue', 'level': 5 },
     { 'title': 'Vuex', 'level': 3 },
     { 'title': 'JavaScript', 'level': 4 },
+    { 'title': 'TypeScript', 'level': 3 },
     { 'title': 'Svelte', 'level': 3 },
     { 'title': 'React', 'level': 2 },
     { 'title': 'Redux', 'level': 1 },
