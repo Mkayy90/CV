@@ -1,5 +1,6 @@
 .sidebar-container {
   min-width: 225px;
+  max-width: 225px;
   padding: 15px;
 }
 
@@ -23,9 +24,14 @@
   max-height: 150%;
 }
 
+.sidebar__about,
+.sidebar__links,
+.sidebar__skills {
+  margin-bottom: 30px;
+}
+
 .sidebar__links {
   text-align: center;
-  margin-bottom: 30px;
 }
 .sidebar__links a {
   display: block;
@@ -36,4 +42,12 @@
 }
 .sidebar__links a:hover {
   filter: brightness(75%);
+}
+
+.sidebar__title {
+  margin-bottom: 10px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: 1px solid #aaa;
 }

@@ -1,0 +1,16 @@
+.about-container {
+  margin-bottom: 5px;
+}
+
+.about__title {
+  margin-bottom: 5px;
+  color: #aaa;
+  font-weight: 600;
+  font-style: italic;
+  text-transform: capitalize;
+}
+
+.about__description {
+  padding: 0 5px;
+  color: #666;
+}
