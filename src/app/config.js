@@ -1,12 +1,6 @@
 
 export const education = [
   {
-    'years': '2009-2011',
-    'title': 'Blekinge Institution of Technology',
-    'subtitle': 'Digital Graphics Design',
-    'description': `The program was directed towards the gaming industry, with a heavy focus on projects together with the other programs (programming, sound production, etc). Most of my projects resolved around the Web, which peaked my interest!`
-  },
-  {
     'years': '2011-2013',
     'title': 'Halmstad University',
     'subtitle': 'Information Technology, Webdesign',
@@ -18,16 +12,16 @@ export const education = [
         'tags': ['PHP', 'jQuery', 'Css']
       }
     ]
+  },
+  {
+    'years': '2009-2011',
+    'title': 'Blekinge Institution of Technology',
+    'subtitle': 'Digital Graphics Design',
+    'description': `The program was directed towards the gaming industry, with a heavy focus on projects together with the other programs (programming, sound production, etc). Most of my projects resolved around the Web, which peaked my interest!`
   }
 ];
 
 export const work = [
-  {
-    'years': '2013-2014',
-    'title': 'New Minds',
-    'subtitle': 'Web Developer',
-    'description': `Before finishing my Bachelor degree at Halmstad University, I was chosen to be part of a trainee program at New Minds. The process was a series of tests involving coding, team work & cognitive tests. Out of about 50 students, 4 of us were accepted and started working at participating companies. In my case, CDON.COM.`
-  },
   {
     'years': '2013-',
     'title': 'CDON.COM',
@@ -70,6 +64,12 @@ export const work = [
         'tags': ['TypeScript', 'Code splitting', 'Performance', 'Mentorship', 'Knowledge sharing', 'Architecture']
       }
     ]
+  },
+  {
+    'years': '2013-2014',
+    'title': 'New Minds',
+    'subtitle': 'Web Developer',
+    'description': `Before finishing my Bachelor degree at Halmstad University, I was chosen to be part of a trainee program at New Minds. The process was a series of tests involving coding, team work & cognitive tests. Out of about 50 students, 4 of us were accepted and started working at participating companies. In my case, CDON.COM.`
   }
 ];
 
