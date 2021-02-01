@@ -1,6 +1,6 @@
+import Sidebar from './components/Sidebar/Sidebar.js';
+import Main from './components/Main/Main.js';
 import './App.css';
-import Sidebar from './components/sidebar/Sidebar.js';
-import Main from './components/main/Main.js';
 
 function App() {
   return (
