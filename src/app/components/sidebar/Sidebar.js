@@ -1,9 +1,13 @@
+import { connect } from 'react-redux';
+import { show } from './../../stores/modules/examples';
 import About from '../About/About';
 import Skills from '../Skills/Skills';
 import image from './profile-img.jpg';
 import './Sidebar.css';
 
-function Sidebar() {
+const Sidebar = (props) => {
+  const toggle = (example) => props.show(example);
+
   return (
     <div className="sidebar-container">
       <div className="image-container">
@@ -21,11 +25,16 @@ function Sidebar() {
       </div>
 
       <div className="sidebar__about">
-      <div className="sidebar__title">About me</div>
+        <div className="sidebar__title">About me</div>
         <About />
+      </div>
+
+      <div className="sidebar__code-examples">
+        <div className="sidebar__title">Code examples</div>
+        <button className="example__button" onClick={() => toggle('star')}>Single SVG star</button>
       </div>
     </div>
   );
-}
+};
 
-export default Sidebar;
+export default connect(null, { show })(Sidebar);

@@ -17,7 +17,7 @@ const svgStar = (level) => {
   );
 };
 
-function Skills() {
+const Skills = () => {
   const skillSet = (skillKey) => skills[skillKey].sort((a, b) => b.level - a.level).map((skill, i) => (
     <div className="skill-container" key={i}>
       <div className="skill__title">{skill.title}</div>
@@ -37,6 +37,6 @@ function Skills() {
       {skillSet(key)}
     </div>
   ));
-}
+};
 
 export default Skills;

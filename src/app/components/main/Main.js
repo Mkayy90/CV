@@ -2,7 +2,7 @@ import Experiences from './../Experiences/Experiences';
 import { education, work } from './../../config';
 import './Main.css';
 
-function Main() {
+const Main = () => {
   const name = 'Max Kjellqvist Johnsson';
   const title = 'Webdeveloper';
 
@@ -19,6 +19,6 @@ function Main() {
       </div>
     </main>
   );
-}
+};
 
 export default Main;

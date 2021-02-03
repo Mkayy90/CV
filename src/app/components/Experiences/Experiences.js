@@ -1,7 +1,7 @@
 import Projects from '../Projects/Projects';
 import './Experiences.css';
 
-function Experiences(props) {
+const Experiences = (props) => {
   const projects = (projects) => projects ? <Projects projects={projects} /> : null;
 
   const experienceItems = props.items.map((item, i) => (
@@ -22,6 +22,6 @@ function Experiences(props) {
       {experienceItems}
     </section>
   );
-}
+};
 
 export default Experiences;

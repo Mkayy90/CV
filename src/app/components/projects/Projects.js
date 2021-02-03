@@ -1,6 +1,6 @@
 import './Projects.css';
 
-function Projects(props) {
+const Projects = (props) => {
   const projects = props.projects.map((project, i) => (
     <div className="project-container" key={i}>
       <div className="project__title">{project.title}</div>
@@ -14,6 +14,6 @@ function Projects(props) {
       {projects}
     </div>
   );
-}
+};
 
 export default Projects;
