@@ -1,8 +1,9 @@
+import { connect } from 'react-redux';
+import { getSections } from './../../stores/modules/sections';
 import Experiences from './../Experiences/Experiences';
-import { education, work } from './../../config';
 import './Main.css';
 
-const Main = () => {
+const Main = (props) => {
   const name = 'Max Kjellqvist Johnsson';
   const title = 'Webdeveloper';
 
@@ -14,11 +15,11 @@ const Main = () => {
       </div>
 
       <div className="main__content">
-        <Experiences items={work} title="Work" />
-        <Experiences items={education} title="Education" />
+        <Experiences items={props.work} title="Work" />
+        <Experiences items={props.education} title="Education" />
       </div>
     </main>
   );
 };
 
-export default Main;
+export default connect((state) => getSections(state))(Main);

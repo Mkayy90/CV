@@ -24,17 +24,17 @@
   cursor: pointer;
 }
 
-.skill__level {
+.skill__rating {
   position: relative;
   transform: scale(1);
   transition: transform 150ms ease;
 }
-.skill-container:hover .skill__level {
+.skill-container:hover .skill__rating {
   z-index: 1;
   transform: scale(1.4);
 }
 
-.skill__level-text {
+.skill__rating-text {
   position: absolute;
   line-height: 22px;
   left: 0;

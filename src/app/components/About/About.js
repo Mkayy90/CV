@@ -1,8 +1,9 @@
-import { about } from '../../config';
+import { connect } from 'react-redux';
+import { getAbout } from './../../stores/modules/about';
 import './About.css';
 
-const About = () => {
-  return about.map((item, i) => (
+const About = (props) => {
+  return props.about.map((item, i) => (
     <div className="about-container" key={i}>
       <div className="about__title">{item.title}</div>
       <div className="about__description">{item.description}</div>
@@ -10,4 +11,4 @@ const About = () => {
   ));
 };
 
-export default About;
+export default connect((state) => getAbout(state))(About);

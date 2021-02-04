@@ -1,8 +1,9 @@
-import { skills } from './../../config';
+import { connect } from 'react-redux';
+import { getSkills } from './../../stores/modules/skills';
 import './Skills.css';
 
-const svgStar = (level) => {
-  const fillAmount = (360 / 5) * level;
+const svgStar = (rating, maxRating = 5) => {
+  const fillAmount = (360 / maxRating) * rating;
   
   return (
     <svg viewBox="0 0 576 512" width="20" height="20">
@@ -17,14 +18,16 @@ const svgStar = (level) => {
   );
 };
 
-const Skills = () => {
-  const skillSet = (skillKey) => skills[skillKey].sort((a, b) => b.level - a.level).map((skill, i) => (
+const Skills = (props) => {
+  const skills = props.skills || {};
+  
+  const skillSet = (skillKey) => skills[skillKey]?.sort((a, b) => b.rating - a.rating).map((skill, i) => (
     <div className="skill-container" key={i}>
       <div className="skill__title">{skill.title}</div>
-      {skill.level ? 
-        <div className="skill__level">
-          {svgStar(skill.level)}
-          <span className="skill__level-text">{skill.level}</span>
+      {skill.rating ? 
+        <div className="skill__rating">
+          {svgStar(skill.rating)}
+          <span className="skill__rating-text">{skill.rating}</span>
         </div>
       : null}
     </div>
@@ -39,4 +42,4 @@ const Skills = () => {
   ));
 };
 
-export default Skills;
+export default connect((state) => getSkills(state))(Skills);
